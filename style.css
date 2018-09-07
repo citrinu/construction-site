@@ -1,0 +1,45 @@
+/* hides all lists when less than 600px + displays icon for small screen */
+
+@media screen and (max-width: 600px)
+{
+  .top-menu li:not(:first-child)
+  {
+    display: none;
+  }
+}
+
+/* displays links vertically when small icon is clicked */
+@media screen and (max-width: 600px)
+{
+  .top-menu.responsive
+  {
+    position: relative;
+  }
+
+  .top-menu.responsive li
+  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+.top-menu
+{
+  background-color: lightblue;
+  overflow: hidden; /*hides content outside of page */
+}
+
+
+.active  /* active link styling */
+{
+  background-color: black;
+  color: white;
+}
+
+
+.top-menu .icon /* hides icon for small screens */
+{
+  display: none;
+}
